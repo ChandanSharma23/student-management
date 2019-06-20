@@ -33,6 +33,9 @@ public class HomeController {
 		model.setViewName("index");
 		return model;
 	}
+
+	
+	
 	
 	@RequestMapping(value = "/newStudent", method = RequestMethod.GET)
 	public ModelAndView newContact(ModelAndView model) {
@@ -69,5 +72,5 @@ public class HomeController {
 
 		return model;
 	}
-
+	
 }

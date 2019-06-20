@@ -3,17 +3,20 @@
       <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
     <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
     <%@ page import = "java.util.ResourceBundle" %> 
-<% ResourceBundle resource = ResourceBundle.getBundle("application");
+   
+    <% ResourceBundle resource = ResourceBundle.getBundle("application");
 
 String version=resource.getString("version");%>
 
 <%=version %>
 <!DOCTYPE html>    
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Student Management Screen</title>
+ <script type="text/javascript" src="<c:url value="/resources/index.js" />"  ></script> 
 </head>
 <body>
 
@@ -25,7 +28,7 @@ String version=resource.getString("version");%>
 		
 		<table border="1">
 
-			<th>FirstName</th>
+			<th onclick="myalert()">FirstName</th>
 		    <th>LastName</th>
 			
 			<th>Email</th>
